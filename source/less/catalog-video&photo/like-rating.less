@@ -1,0 +1,63 @@
+.like-rating {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: baseline;
+
+  @media (min-width: 768px) {
+    align-items: center;
+    gap: 9px;
+  }
+}
+
+.like-rating__value {
+  @media (min-width: 1200px) {
+    color: #ffffff;
+  }
+}
+
+.like-rating__like-icon {
+  cursor: pointer;
+
+  &--click {
+    & path {
+      fill: #000000;
+      opacity: 1;
+    }
+  }
+
+  &:hover path {
+    opacity: 0.6;
+  }
+
+  &:active path {
+    opacity: 1;
+
+    @media (min-width: 1200px) {
+      opacity: 0.3;
+    }
+  }
+
+  & path {
+    @media (min-width: 1200px) {
+      fill: #ffffff;
+      opacity: 1;
+    }
+  }
+}
+
+.like-rating__button {
+  @media (min-width: 768px) {
+    margin-bottom: 5px;
+  }
+
+  &:hover path {
+    fill: #ff0000;
+    opacity: 0.3;
+  }
+
+  &:active path {
+    fill: #000000;
+    opacity: 0.6;
+  }
+}

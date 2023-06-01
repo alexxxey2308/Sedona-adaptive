@@ -1,0 +1,25 @@
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 33px 82px;
+  gap: 30px;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 36px 60px 36px 60px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 36px 120px;
+  }
+}
+
+.main-footer__tag {
+  @media (min-width: 768px) {
+    justify-self: start;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
