@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Main page</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page__body">
+  <div class="page__wrapper">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img src="img/logo.svg" width="185" height="96" alt="Город Седона.">
+      </a>
+      <nav class="main-header__nav main-nav main-nav--nojs main-nav--open">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current title">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item title">
+            <a href="catalog.html">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__item title">
+            <a href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item title">
+            <a href="https://htmlacademy.ru/">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+        <button class="main-nav__toggle toggle-button toggle-button--burger" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="hero">
+        <h1 class="visually-hidden">Добро пожаловать в седону</h1>
+        <div class="hero__banner welcome-banner">
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-image/back-desktop.webp, img/index-image/back-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-image/back-mobile.webp, img/index-image/back-mobile@2x.webp 2x">
+
+            <source media="(min-width: 768px)" srcset="img/index-image/back-desktop.jpg, img/index-image/back-desktop@2x.jpg 2x">
+              <img class="welcome-banner__background" alt="Горы" src="img/index-image/back-mobile.jpg" srcset="img/index-image/back-mobile@2x.jpg 2x" width="320" height="389">
+          </picture>
+            <img class="welcome-banner__text" alt="Welcome to the gorgeus Sedona, because the Grand Canyon sucks!" src="img/index-image/text-index.svg" width="282" height="214">
+        </div>
+      </section>
+      <section class="reasons">
+        <div class="reasons__text-wrapper">
+          <h2 class="reasons__title title">Седона — небольшой городок&nbsp;в Аризоне, заслуживающий большего!</h2>
+          <p class="reasons__text text-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+        <ul class="reasons__list reasons-list">
+          <li class="reasons-list__item reasons-list__item--with-image reason-card">
+            <div class="reason-card__wrapper reason-card__wrapper--with-image reason-card__wrapper--triangle">
+              <h3 class="reason-card__title title title--with-image">Настоящий городок</h3>
+              <span class="reason-card__number text-description text-description--with-image">— №1 —</span>
+              <p class="reason-card__description text-description text-description--with-image">Седона не аттракцион
+                для туристов, там&nbsp;течёт своя жизнь</p>
+            </div>
+            <div class="reason-card__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/index-image/town-reason-desktop.webp, img/index-image/town-reason-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/index-image/town-reason-tablet.webp, img/index-image/town-reason-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/index-image/town-reason-mobile.webp, img/index-image/town-reason-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/index-image/town-reason-desktop.jpg, img/index-image/town-reason-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/index-image/town-reason-tablet.jpg, img/index-image/town-reason-tablet@2x.jpg 2x">
+                <img class="reason-card__image" alt="Фотография города" src="img/index-image/town-reason-mobile.jpg" srcset="img/index-image/town-reason-mobile@2x.jpg 2x" width="320" height="260">
+              </picture>
+            </div>
+            <ul class="reason-card__advantages advantages-list">
+              <li class="advantages-list__item advantages-card advantages-card--home">
+                <h4 class="advantages-card__title title title--left">Жильё</h4>
+                <p class="advantages-card__description text-description text-description--left">Рекомендуем пожить в
+                  настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="advantages-list__item advantages-card advantages-card--food">
+                <h4 class="advantages-card__title title title--left">Еда</h4>
+                <p class="advantages-card__description text-description text-description--left">Всегда заказывайте
+                  фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
+              </li>
+              <li class="advantages-list__item advantages-card advantages-card--present">
+                <h4 class="advantages-card__title title title--left">Сувениры</h4>
+                <p class="advantages-card__description text-description text-description--left">Не только китайского,<br>но&nbsp;и местного производства!</p>
+              </li>
+            </ul>
+          </li>
+          <li class="reasons-list__item reasons-list__item--with-image reason-card">
+            <div class="reason-card__wrapper reason-card__wrapper--with-image">
+              <h3 class="reason-card__title title title--with-image">Там есть мост&nbsp;дьявола</h3>
+              <span class="reason-card__number text-description text-description--with-image">— №2 —</span>
+              <p class="reason-card__description text-description text-description--with-image">Да, по нему можно
+                пройти!&nbsp;<br class="text-description__br-desktop">Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="reason-card__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/index-image/bridge-reason-desktop.webp, img/index-image/bridge-reason-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/index-image/bridge-reason-tablet.webp, img/index-image/bridge-reason-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/index-image/bridge-reason-mobile.webp, img/index-image/bridge-reason-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/index-image/bridge-reason-desktop.jpg, img/index-image/bridge-reason-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/index-image/bridge-reason-tablet.jpg, img/index-image/bridge-reason-tablet@2x.jpg 2x">
+                <img class="reason-card__image" alt="Фотография города" src="img/index-image/bridge-reason-mobile.jpg" srcset="img/index-image/bridge-reason-mobile@2x.jpg 2x" width="320" height="260">
+              </picture>
+            </div>
+          </li>
+          <li class="reasons-list__item reason-card reason-card--gray">
+            <div class="reason-card__wrapper reason-card__wrapper--gray">
+              <h3 class="reason-card__title title">Небольшая<br> площадь</h3>
+              <span class="reason-card__number text-description">— №3 —</span>
+              <p class="reason-card__description text-description">Все интересные места находятся очень близко</p>
+            </div>
+          </li>
+          <li class="reasons-list__item reason-card reason-card--gray">
+            <div class="reason-card__wrapper reason-card__wrapper--gray">
+              <h3 class="reason-card__title title">Красивая<br> дорога</h3>
+              <span class="reason-card__number text-description">— №4 —</span>
+              <p class="reason-card__description text-description">Ехать в Седону из Лас-Вегаса совсем <br>&nbsp;не скучно!</p>
+            </div>
+          </li>
+          <li class="reasons-list__item reason-card reason-card--gray">
+            <div class="reason-card__wrapper reason-card__wrapper--gray">
+              <h3 class="reason-card__title title">Мало<br> туристов</h3>
+              <span class="reason-card__number text-description">— №5 —</span>
+              <p class="reason-card__description text-description">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="search">
+        <div class="search__wrapper">
+          <h2 class="search__title title title--bigger">Заинтересовались?</h2>
+          <p class="search__description text-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
+            предложения гостиниц в Седоне</p>
+          <button class="search__button button" type="button">Найти гостиницу</button>
+        </div>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Интерактивная карта.</h2>
+        <div class="map__element">
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d457360.43163000466!2d-111.99055794443726!3d34.79151753383951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2skz!4v1681227557676!5m2!1sru!2skz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Адрес города Седона." width="320" height="350">
+          </iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <h2 class="visually-hidden">Контакты.</h2>
+      <span class="main-footer__tag title title--bigger">#visitsedona</span>
+      <div class="main-footer__social social">
+        <ul class="social__list social-list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <svg class="social__icon" width="48" height="48">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Вконтакте.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <svg class="social__icon" width="48" height="48">
+                <use xlink:href="img/sprite.svg#tg"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Телеграме.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <svg class="social__icon" width="48" height="48">
+                <use xlink:href="img/sprite.svg#yt"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Ютубе.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><b class="copyright__text text-description">Разработано</b>
+          <span class="visually-hidden">HTML Academy.</span>
+          <svg class="copyright__logo" width="27" height="35">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
