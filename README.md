@@ -1,1 +1,1 @@
-# Sedona-adaptive
+# Sedona-adaptive my personal project
